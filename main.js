@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
-console.log(chalk.yellowBright.underline("\t Welcome to Cli Todo-list"));
+console.log(chalk.yellowBright.underline(`\t "Welcome to Cli Todo-list" \n`));
 let todos = [];
 let condition = true;
 while (condition) {
