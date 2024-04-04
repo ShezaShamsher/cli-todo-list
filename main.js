@@ -9,18 +9,18 @@ while (condition) {
         {
             name: 'todo',
             type: 'input',
-            message: 'What would you add in your todo? :'
+            message: chalk.green('What would you add in your todo? :')
         },
         {
             name: 'addmoretodos',
             type: 'confirm',
-            message: 'Would you add more in your todos?',
+            message: chalk.green('Would you add more in your todos?'),
             default: 'True'
         }
     ]);
     todos.push(answers.todo);
     if (answers.todo) {
-        console.log(chalk.blue.bold(todos));
+        console.log(chalk.magenta.bold(todos));
     }
     else {
         console.log(chalk.red.bold("\tError!! firstly add your todo \n"));
@@ -29,3 +29,4 @@ while (condition) {
     condition = answers.addmoretodos;
 }
 ;
+console.log(chalk.whiteBright.bgRed("Your Updated Todo-List"), todos);
