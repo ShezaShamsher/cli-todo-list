@@ -3,7 +3,7 @@ import inquirer from "inquirer";
 
 import chalk from "chalk" ;
 
-console.log(chalk.yellowBright.underline(`\t "Welcome to Cli Todo-list" \n`));
+console.log(chalk.yellowBright.underline(`\t\n"Welcome to Cli Todo-list" \n`));
 
 let todos=[];
 
@@ -35,4 +35,8 @@ while(condition){
     };
     condition = answers.addmoretodos ;
 };
-console.log(chalk.whiteBright.bgRed("Your Updated Todo-List"), todos);
+console.log(chalk.whiteBright.bgRed("Your Updated Todo-List"));
+
+todos.forEach(todo => {
+    console.log(chalk.yellow.italic(todo));
+});
