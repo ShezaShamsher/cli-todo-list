@@ -30,6 +30,6 @@ while (condition) {
 }
 ;
 console.log(chalk.whiteBright.bgRed("Your Updated Todo-List"));
-todos.forEach(todo => {
-    console.log(chalk.yellow.italic(todo));
+todos.forEach((todo) => {
+    console.log(chalk.yellow.italic.underline(todo));
 });
